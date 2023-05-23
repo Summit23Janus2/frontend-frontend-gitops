@@ -1,0 +1,15 @@
+app:
+  name: frontend-poi-map-app
+  namespace: frontend
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/frontend-frontend
+  org: Summit23Janus2
+  name: frontend-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: frontend/poi-map-app
+  tag: latest
